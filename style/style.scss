@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.diseño_matricula {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-top: 5%;
+    border: 5px solid black;
+    outline: 4px solid rgb(219, 216, 216);
+    border-radius: 4%;
+    width: 25%;
+    height: 6vh;
+    position: relative;
+    margin-left: 35%;
+
+    p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-weight: 700;
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    p {
+        font-size: 14px;
+        position: absolute;
+    }
+
+}
