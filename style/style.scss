@@ -34,14 +34,13 @@ button {
         width: 100%;
         font-size: 20px;
     }
-
-
 }
 
 @media only screen and (max-width: 1000px) {
-    p {
-        font-size: 14px;
-        position: absolute;
+    .diseño_matricula {
+        p {
+            font-size: 14px;
+            position: absolute;
+        }
     }
-
 }

@@ -37,7 +37,7 @@ button {
 }
 
 @media only screen and (max-width: 1000px) {
-  p {
+  .diseño_matricula p {
     font-size: 14px;
     position: absolute;
   }
