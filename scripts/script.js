@@ -2,19 +2,40 @@ document.getElementById("btn").addEventListener("click", generarMatricula);
 
 function generarMatricula() {
 
-    let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let letras = "BCDFGHJKLMNPRSTVWXYZ";
     let numeros = "0123456789";
     let matricula = "";
-    
-    for (let j = 0; j < 4; j++) {
+
+    // Función para generar una matrícula aleatoria
+    for (let i = 0; i < 4; i++) {
         matricula += numeros.charAt(Math.floor(Math.random() * numeros.length));
     }
-    for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
         matricula += letras.charAt(Math.floor(Math.random() * letras.length));
     }
+    matricula = matricula.replace("CH", "");
+    matricula = matricula.replace("LL", "");
+
     document.getElementById("test").innerHTML = matricula;
+}
 
 
+// Función para calcular la matrícula
+
+document.getElementById("calcularBtn").addEventListener("click", calcularMatrícula);
+function calcularMatrícula() {
+
+    let matricula = document.getElementById("inputMatricula").value;
+    let number = parseInt(matricula.slice(0, 4)) + 1;
+    let letras = matricula.slice(4, 7);
+    // let numberLetras = number.concat(...letras);
+    let nuevaMatricula = number.toString() + letras.toUpperCase();
+
+
+    console.log(nuevaMatricula)
+
+
+    document.getElementById("resultado").innerHTML = nuevaMatricula
 }
 
 
