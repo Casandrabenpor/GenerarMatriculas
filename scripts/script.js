@@ -28,11 +28,8 @@ function calcularMatrícula() {
     let matricula = document.getElementById("inputMatricula").value;
     let number = parseInt(matricula.slice(0, 4)) + 1;
     let letras = matricula.slice(4, 7);
-    // let numberLetras = number.concat(...letras);
     let nuevaMatricula = number.toString() + letras.toUpperCase();
 
-
-    console.log(nuevaMatricula)
 
 
     document.getElementById("resultado").innerHTML = nuevaMatricula

@@ -6,10 +6,15 @@ body {
 h1 {
   display: flex;
   justify-content: center;
+  font-family: "Arial, Helvetica, sans-serif";
 }
 
 button {
   cursor: pointer;
+  font-family: "Arial, Helvetica, sans-serif";
+  background-color: rgb(129, 129, 241);
+  color: white;
+  border-radius: 5px;
 }
 
 .diseño_matricula {
@@ -22,10 +27,12 @@ button {
   border-radius: 4%;
   width: 25%;
   height: 6vh;
+  background-color: white;
   position: relative;
   margin-left: 35%;
 }
 .diseño_matricula p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
   text-align: center;
   justify-content: center;

@@ -5,10 +5,15 @@ body {
 h1 {
     display: flex;
     justify-content: center;
+    font-family:"Arial, Helvetica, sans-serif";
 }
 
 button {
     cursor: pointer;
+    font-family:"Arial, Helvetica, sans-serif";
+    background-color: rgb(129, 129, 241);
+    color: #FFFF;
+    border-radius: 5px; 
 }
 
 .diseño_matricula {
@@ -21,10 +26,12 @@ button {
     border-radius: 4%;
     width: 25%;
     height: 6vh;
+    background-color: #FFFF;
     position: relative;
     margin-left: 35%;
 
     p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         display: flex;
         text-align: center;
         justify-content: center;
@@ -35,12 +42,15 @@ button {
         font-size: 20px;
     }
 }
-#calcular_matricula{
+
+#calcular_matricula {
     margin-top: 5%;
 }
-#calcularBtn{
+
+#calcularBtn {
     margin-top: 5%;
 }
+
 @media only screen and (max-width: 1000px) {
     .diseño_matricula {
         p {
