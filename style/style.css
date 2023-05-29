@@ -1,6 +1,6 @@
-@charset "UTF-8";
 body {
   text-align: center;
+  background: gray;
 }
 
 h1 {
@@ -17,7 +17,7 @@ button {
   border-radius: 5px;
 }
 
-.diseño_matricula {
+.design {
   display: flex;
   flex-direction: row;
   gap: 3em;
@@ -31,7 +31,7 @@ button {
   position: relative;
   margin-left: 35%;
 }
-.diseño_matricula p {
+.design p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
   text-align: center;
@@ -43,7 +43,7 @@ button {
   font-size: 20px;
 }
 
-#calcular_matricula {
+#calculate {
   margin-top: 5%;
 }
 
@@ -52,7 +52,7 @@ button {
 }
 
 @media only screen and (max-width: 1000px) {
-  .diseño_matricula p {
+  .design p {
     font-size: 14px;
     position: absolute;
   }
